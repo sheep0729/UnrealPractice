@@ -1,0 +1,94 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.2",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Tutorials",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "ActorPalette",
+			"Enabled": true
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
+		},
+		{
+			"Name": "NiagaraFluids",
+			"Enabled": true
+		},
+		{
+			"Name": "HairStrands",
+			"Enabled": true
+		},
+		{
+			"Name": "Volumetrics",
+			"Enabled": true
+		},
+		{
+			"Name": "ChaosCaching",
+			"Enabled": true
+		},
+		{
+			"Name": "PhysicsControl",
+			"Enabled": true
+		},
+		{
+			"Name": "DeformerGraph",
+			"Enabled": true
+		},
+		{
+			"Name": "ChaosVehiclesPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "OpenXR",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android",
+				"HoloLens"
+			]
+		}
+	],
+	"AdditionalPluginDirectories": [
+		"Platforms"
+	],
+	"TargetPlatforms": [
+		"MacNoEditor",
+		"WindowsNoEditor",
+		"Android",
+		"IOS",
+		"Linux",
+		"Mac",
+		"Windows",
+		"PS4",
+		"PS5",
+		"Switch",
+		"WinGDK",
+		"XboxOneGDK",
+		"XSX",
+		"HoloLens"
+	]
+}
