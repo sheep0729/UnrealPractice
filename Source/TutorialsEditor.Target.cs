@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+﻿// Copyright Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 using System.Collections.Generic;
@@ -11,5 +11,6 @@ public class TutorialsEditorTarget : TargetRules
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_2;
 		ExtraModuleNames.Add("Tutorials");
+		// ExtraModuleNames.Add("ModuleTest");
 	}
 }

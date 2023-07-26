@@ -5,6 +5,14 @@
 	"Description": "",
 	"Modules": [
 		{
+			"Name": "TestModule",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		},
+		{
 			"Name": "Tutorials",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
