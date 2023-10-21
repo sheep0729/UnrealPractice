@@ -1,7 +1,5 @@
 #include "BlendTriggerVolume.h"
 #include "Components/BoxComponent.h"
-#include "Camera/CameraActor.h"
-#include "Template/TP_FirstPerson/TP_FirstPersonCharacter.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "Template/TP_ThirdPerson/TP_ThirdPersonCharacter.h"
 

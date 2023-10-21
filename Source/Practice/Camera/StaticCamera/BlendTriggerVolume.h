@@ -19,7 +19,7 @@ protected:
 
 	// Camera Actor which the Actor Volume blends to
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TSubclassOf<ACameraActor> CameraToFind;
+	TSubclassOf<AActor> CameraToFind;
 
 	// Blend time for camera transition
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta =(ClampMin = 0.0f ))
