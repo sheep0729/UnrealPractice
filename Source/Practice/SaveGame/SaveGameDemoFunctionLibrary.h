@@ -31,3 +31,4 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Demo|Save Game Demo")
 	static void RunSynchronousSaveLoad();
 };
+
