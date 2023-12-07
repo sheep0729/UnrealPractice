@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note name="Ami" age="100">
+<to>George</to>
+<from>John</from>
+<heading>Reminder </heading>
+<body>Don't forget the meeting!</body>
+<list>
+<line>Hello</line>
+<line>World</line>
+<line>PPPPPP</line>
+</list>
+</note>

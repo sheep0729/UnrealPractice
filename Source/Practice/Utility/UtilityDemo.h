@@ -20,4 +20,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
 	static void PathDemo();
+
+	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
+	static void XmlDemo();
 };
