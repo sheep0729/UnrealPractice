@@ -23,4 +23,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
 	static void XmlDemo();
+
+	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
+	static void JsonDemo();
 };

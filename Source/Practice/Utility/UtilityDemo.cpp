@@ -47,5 +47,15 @@ void UUtilityDemo::XmlDemo()
 		UE_LOG(LogTemp, Display, TEXT("list: %s "), *(Node-> GetContent()));
 	}
 }
+
+void UUtilityDemo::JsonDemo()
+{
+	const FString JsonStr = "[{\"author\":\"Tim\"},{\"age\":\"100\"}]";
+	const TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(JsonStr);
+	if (TArray<TSharedPtr<FJsonValue>> JsonParsed; FJsonSerializer::Deserialize(JsonReader, JsonParsed))
+	{
+		UE_LOG(LogTemp, Display, TEXT("Json 解析成功"));
+		const FString Author = JsonParsed[0]->AsObject()->GetStringField("author");
+		UE_LOG(LogTemp, Display, TEXT("author = %s"), *Author);
 	}
 }
