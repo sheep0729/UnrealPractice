@@ -15,6 +15,9 @@ class PRACTICE_API UUtilityDemo : public UBlueprintFunctionLibrary
 
 public:
 	
-	UFUNCTION(BlueprintCallable, Category = "UtilityDemo|Regex")
+	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
 	static void RegexDemo();
+
+	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
+	static void PathDemo();
 };
