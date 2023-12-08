@@ -26,4 +26,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
 	static void JsonDemo();
+
+	UFUNCTION(BlueprintCallable, Category = "Utility Demo")
+	static void GConfigDemo();
 };

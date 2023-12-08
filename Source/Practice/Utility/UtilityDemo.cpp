@@ -59,3 +59,32 @@ void UUtilityDemo::JsonDemo()
 		UE_LOG(LogTemp, Display, TEXT("author = %s"), *Author);
 	}
 }
+
+void UUtilityDemo::GConfigDemo()
+{
+	const FString ConfigFile = FPaths::ProjectDir() / "Asset/MyConfig.ini";
+	GConfig->SetString(
+		/* Section */ TEXT("MySection"),
+		              /* Key */ TEXT("Name"),
+		              /* Value */ TEXT("李白"),
+		              /* Filename */ ConfigFile);
+
+	GConfig->SetInt(
+		/* Section */ TEXT("MySection"),
+		              /* Key */ TEXT("Age"),
+		              /* Value */ 18,
+		              /* Filename */ ConfigFile);
+
+	// 通常在运行过程中，进行写入配置操作值并不会马上写入到文件。
+	GConfig->Flush(false, ConfigFile);
+
+	FString Result;
+	GConfig->GetString(
+		TEXT("MySection"),
+		TEXT("Name"),
+		Result,
+		ConfigFile);
+
+	UE_LOG(LogTemp, Display, TEXT("Name = %s"), *Result);
+}
+
